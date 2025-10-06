@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="https://vicentecarvalho.com/sitemap_style.xsl" type="text/xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://vicentecarvalho.com/</loc>
     </url>
     <url>
         <loc>https://vicentecarvalho.com/my-markdown/</loc>
+        <lastmod>2025-10-06</lastmod>
+    </url>
+    <url>
+        <loc>https://vicentecarvalho.com/my-markdown2/</loc>
         <lastmod>2025-10-06</lastmod>
     </url>
     <url>
