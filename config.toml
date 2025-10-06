@@ -1,0 +1,38 @@
+# The URL the site will be built for
+base_url = "https://www.vicentecarvalho.com/"
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = true
+
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = true
+
+title = "Just a Thought"
+theme = "tabi"
+
+[markdown]
+# Whether to do syntax highlighting
+# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
+highlight_code = true
+highlight_theme = "css"
+
+[extra]
+# Put all your custom variables here
+
+[extra.giscus]
+enabled_for_all_posts = true
+repo = "vicentecarvalho/vicentecarvalho.github.io"
+repo_id = "R_kgDOP9bgvQ"
+category = "General"
+category_id = "DIC_kwDOP9bgvc4CwViO"
+mapping = "pathname"
+reactions_enabled = "1"
+emit_metadata = "0"
+theme = "preferred_color_scheme"
+lang = "en"
+automatic_loading = true
+strict_title_matching = false
+enable_reactions = true
+light_theme = "light"
+dark_theme = "dark_dimmed"
+lazy_loading = true
