@@ -22,13 +22,13 @@ highlight_theme = "css"
 [extra.giscus]
 enabled_for_all_posts = true
 repo = "vicentecarvalho/vicentecarvalho.github.io"
-repo_id = "1071046845"
-category = "Comments"
-category_id = "blog_comments"
+repo_id = "R_kgDOP9bgvQ"
+category = "General"
+category_id = "DIC_kwDOP9bgvc4CwViO"
 mapping = "pathname"
 reactions_enabled = "1"
 emit_metadata = "0"
-theme = "tabi"
+theme = "preferred_color_scheme"
 lang = "en"
 automatic_loading = true
 strict_title_matching = false
