@@ -19,3 +19,20 @@ highlight_theme = "css"
 [extra]
 # Put all your custom variables here
 
+[extra.giscus]
+enabled_for_all_posts = true
+repo = "vicentecarvalho/vicentecarvalho.github.io"
+repo_id = "1071046845"
+category = "Comments"
+category_id = "blog_comments"
+mapping = "pathname"
+reactions_enabled = "1"
+emit_metadata = "0"
+theme = "tabi"
+lang = "en"
+automatic_loading = true
+strict_title_matching = false
+enable_reactions = true
+light_theme = "light"
+dark_theme = "dark_dimmed"
+lazy_loading = true
