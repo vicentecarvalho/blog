@@ -1,6 +1,6 @@
 +++
 title = "Config Validator"
-summary = "A simple proc-macro to allow the integration of the config and clap crates."
+description = "A simple proc-macro to allow the integration of the config and clap crates."
 date = 2025-11-06
 
 [taxonomies]

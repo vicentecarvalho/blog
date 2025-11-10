@@ -27,10 +27,10 @@ menu = [
 
 [extra.giscus]
 enabled_for_all_posts = true
-repo = "vicentecarvalho/vicentecarvalho.github.io"
-repo_id = "R_kgDOP9bgvQ"
+repo = "vicentecarvalho/blog-comments"
+repo_id = "R_kgDOP9gXIQ"
 category = "General"
-category_id = "DIC_kwDOP9bgvc4CwViO"
+category_id = "DIC_kwDOP9gXIc4CwViC"
 mapping = "pathname"
 reactions_enabled = "1"
 emit_metadata = "0"
