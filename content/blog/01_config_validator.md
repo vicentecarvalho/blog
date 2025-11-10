@@ -421,8 +421,64 @@ fn field_getter_test() -> anyhow::Result<()> {
 }
 ```
 
-The trick behind the Validate proc-macro is that it will generate a new struct with getters according to each field configuration.
+The trick behind the Validate proc-macro is that it will generate a new struct, in case all mandatory arguments are present, with getters according to each field configuration.
 The new struct name is prefixed with "Validated". So in the example above, the settings are present in a struct named ValidatedSettings.
+
+Here is the Validate macro expansion for the example above.
+Note that optional field getters return an Option<_> type while mandatory field getters return the concrete type.
+
+```rust
+// ======================================
+// Recursive expansion of Validate macro
+// ======================================
+
+impl Settings {
+    pub fn validate_configuration(&self) -> ValidatedSettings {
+        if self.config_file.is_none() {
+            panic!(
+                "[config-validator] mandatory field \"{}\" not provided for struct \"{}\"",
+                stringify!(config_file),
+                stringify!(Settings)
+            );
+        }
+        if self.log_config_file.is_none() {
+            panic!(
+                "[config-validator] mandatory field \"{}\" not provided for struct \"{}\"",
+                stringify!(log_config_file),
+                stringify!(Settings)
+            );
+        }
+        if self.phone_number.is_none() {
+            panic!(
+                "[config-validator] mandatory field \"{}\" not provided for struct \"{}\"",
+                stringify!(phone_number),
+                stringify!(Settings)
+            );
+        }
+        ValidatedSettings(self.clone())
+    }
+}
+#[derive(Clone, Debug, Serialize)]
+pub struct ValidatedSettings(Settings);
+
+impl ValidatedSettings {
+    pub fn get_config_file(&self) -> String {
+        self.0.config_file.clone().unwrap()
+    }
+    pub fn get_log_config_file(&self) -> String {
+        self.0.log_config_file.clone().unwrap()
+    }
+    pub fn get_name(&self) -> Option<String> {
+        self.0.name.clone()
+    }
+    pub fn get_address(&self) -> Option<String> {
+        self.0.address.clone()
+    }
+    pub fn get_phone_number(&self) -> String {
+        self.0.phone_number.clone().unwrap()
+    }
+}
+```
 
 
 ### Wrapping all up into a single example
