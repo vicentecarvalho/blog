@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="https://www.vicentecarvalho.com/sitemap_style.xsl" type="text/xsl"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://www.vicentecarvalho.com/</loc>
+    </url>
+    <url>
+        <loc>https://www.vicentecarvalho.com/blog/</loc>
+    </url>
+    <url>
+        <loc>https://www.vicentecarvalho.com/blog/01-config-validator/</loc>
+        <lastmod>2025-11-06</lastmod>
+    </url>
+    <url>
+        <loc>https://www.vicentecarvalho.com/blog/page/1/</loc>
+    </url>
+    <url>
+        <loc>https://www.vicentecarvalho.com/tags/</loc>
+    </url>
+    <url>
+        <loc>https://www.vicentecarvalho.com/tags/rust/</loc>
+    </url>
+</urlset>
